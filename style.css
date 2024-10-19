@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #f9f3ff;
+}
+
+.header {
+    background-color: #171a24;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    height: 120px;
+    padding: 5px 10px;
+}
+
+.header .nav-links {
+    list-style: none;
+    /*margin-left: 220px;*/
+}
+
+.header .nav-links li {
+    padding: 0 20px;
+}
+
+.header .nav-links a:hover {
+
+    color: white;
+
+}
+
+.header .nav-links a {
+
+    font-size: 30px;
+    color: #e2daff;
+    text-decoration: none;
+}
+
+.logo{
+
+    padding-left: 20vh;
+
+    float:left;
+
+}
+
+.logo a{
+
+    width: 100vh;
+    height: 100vh;
+
+}
+
+.menu ul {
+
+    padding: 0;
+    background-color: #171a24;
+
+}
+
+.menu ul li {
+
+    padding: 2vh;
+    display: inline;
+    position: relative;
+
+}
+
+.menu ul li a {
+
+
+    color: #e2daff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    transition: background .3s;
+
+}
+
+.menu ul ul {
+
+    background-color: #1e212e;
+
+    display: none;
+    left: 0;
+    position: absolute;
+    width: 160px;
+
+}
+
+.menu ul li:hover ul {
+
+    display: block;
+
+}
+
+.menu ul ul li a {
+
+    display: block;
+
+}
+
+
+
+/*                                              CONTATO                                                         */
+
+.icons {
+    background-color: darkblue;
+    width: 80px;
+    height: 100vh;
+}
+
+.nav-produtos {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.nav-produtos li {
+    margin-top: 20px;
+    height: 70px;
+    width: 70px;
+    background-color: antiquewhite;
+}
+
+
+
+/*                                              EXPERIENCIAS                                                         */
+
+.exp-corpo {
+
+    background-color: brown;
+    width: 150vh;
+    height: 200vh;
+    margin: auto;
+
+}
+
+.cont-botoes {
+    padding: 200px 0px 0px 0px;
+    display: table;
+}
+
+.botoes {
+    display: table-cell;
+    float: left;
+    margin-left: 95px;
+}
+
+.botoes button {
+    background-color: black;
+    border-style: none;
+    width: 13vh;
+    height: 30px;
+    margin-left: 30px;
+    border-radius: 5px 5px 0px 0px;
+
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.botoes button:hover {
+    background-color: #171a24;
+}
+
+.botoes-linha {
+    display: grid;
+    margin: auto;
+    background-color: black;
+    width: 120vh;
+    height: 20px;
+}
+
+
+
+/*                                              PERFIL                                                         */
+
+.perfil-corpo {
+
+    box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+
+    display: table;
+    margin: auto;
+    margin-top: 10vh;
+
+    width: 125vh;
+    height: 200vh;
+    background-color: red;
+
+}
+
+.perfil-conteudo {
+
+    display: table-cell;
+
+}
+
+.perfil-moldura {
+
+    display: table-cell;
+    float: left;
+    margin: 8vh;
+    padding: 3vh;
+
+    background-color: blue;
+
+    width: 36vh;
+    height: 36vh;
+
+}
+
+.perfil-foto {
+
+    display: table-cell;
+
+
+    background-color: black;
+    width: 30vh;
+    height: 30vh;
+
+}
+
+.perfil-nome {
+
+    padding: 20vh;
+    display: table-cell;
+
+}
+
+
+
+.perfil-bio {
+
+    background-color: darkred;
+    margin: auto;
+    padding: 10vh;
+    width: 110vh;
+    display: table;
+
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+
+.esquerda{
+
+background-color: crimson;
+
+display: table-cell;
+float: left;
+
+margin-left: 3vh;
+margin-right: 3vh;
+margin-top: 50px;
+margin-bottom: 50px;
+
+width: 70vh;
+height: 120vh;
+
+}
+
+.direita{
+
+background-color:dodgerblue;
+
+display: table-cell;
+float: right;
+
+margin-right: 3vh;
+margin-top: 50px;
+margin-bottom: 50px;
+
+width: 40vh;
+height: 80vh;
+
+}
+
+.perfil-amigos {
+
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:left;
+    color: white;
+
+
+    display: table;
+    width: 110vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    background-color: blue;
+    margin: auto;
+    margin-top: 5vh;
+
+}
+
+.perfil-amigos div{
+
+
+    background-color: darkblue;
+
+    display: table-cell;
+    float: left;
+
+    border-radius: 100%;
+    margin: 10px;
+    width: 10vh;
+    height: 10vh;
+
+}
