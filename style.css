@@ -57,6 +57,7 @@ body {
 
 .menu ul {
 
+    border-radius: 5px;
     padding: 0;
     background-color: #171a24;
 
@@ -101,6 +102,14 @@ body {
 .menu ul ul li a {
 
     display: block;
+
+}
+
+.rodape{
+
+    background-color: #171a24;
+    width: 100%;
+    height: 35vh;
 
 }
 
@@ -187,6 +196,7 @@ body {
     display: table;
     margin: auto;
     margin-top: 10vh;
+    margin-bottom: 10vh;
 
     width: 125vh;
     height: 200vh;
@@ -400,14 +410,14 @@ body {
     padding: 0px 200px;
     justify-content: space-between;
     /**/
-    
+
     width: 100%;
     height: 22em;
     align-items: center;
 
 }
 
-.tipos div{
+.tipos div {
 
     background-color: crimson;
 
@@ -416,22 +426,94 @@ body {
     border-radius: 100%;
     width: 250px;
     height: 250px;
-    
+
 }
 
-h4{
+h4 {
     font-family: sans-serif;
     font-size: 25px;
-    
+
     margin: auto;
     margin-top: 34vh;
 }
 
-.planos{
+.planos {
 
     background-color: greenyellow;
 
     width: 100%;
     height: 100vh;
+
+}
+
+.placeholder {
+
+    display: flex;
+    background-color: crimson;
+    width: 100%;
+    height: 75vh;
+
+}
+
+.placeholder div {
+
+    display: flex;
+    float: left;
+    margin: auto;
+    background-color: aqua;
+    
+    border-radius: 20px;
+    width: 30%;
+    height: 90%;
+
+
+}
+
+.placeholder1{
+
+
+
+}
+
+.placeholder2{
+
+
+
+}
+
+.placeholder3{
+
+
+
+}
+
+
+
+/*                                              SERVIÇOS                                                         */
+
+.servicos-corpo {
+
+    background-color: burlywood;
+    border-radius: 33px 33px 0px 0px;
+    margin: 50px auto;
+    width: 75%;
+    height: 220vh;
+
+}
+
+.parte01{
+
+    background-color:slategray;
+    border-radius: 33px 33px 0px 0px;
+    width: 100%;
+    height: 40vh;
+
+}
+
+.parte02{
+
+    background-color:gray;
+    width: 100%;
+    height: 80vh;
 
 }
