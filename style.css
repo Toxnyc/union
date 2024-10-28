@@ -5,7 +5,9 @@
 }
 
 body {
-    background-color: #f9f3ff;
+    
+    background: black;
+
 }
 
 .header {
@@ -42,8 +44,8 @@ body {
 
 .logo {
 
+    margin-right: 5em;
     padding-left: 20vh;
-
     float: left;
 
 }
@@ -58,7 +60,7 @@ body {
 .menu ul {
 
     border-radius: 5px;
-    padding: 0;
+    padding: 0 0 0 1vh;
     background-color: #171a24;
 
 }
@@ -107,38 +109,147 @@ body {
 
 .rodape{
 
-    background-color: #171a24;
-    width: 100%;
-    height: 35vh;
-
-}
-
-
-
-/*                                              CONTATO                                                         */
-
-.icons {
-    background-color: darkblue;
-    width: 80px;
-    height: 100vh;
-}
-
-.nav-produtos {
-    display: grid;
+    background-color:#171a24;
+    padding: 2em;
+    padding-left: 4em;
+    padding-right: 4em;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-items: center;
+    flex-wrap: wrap;
+
+    color: white;
+    font-family: sans-serif;
+
 }
 
-.nav-produtos li {
-    margin-top: 20px;
-    height: 70px;
-    width: 70px;
-    background-color: antiquewhite;
+.rodape-logo{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.rodape-logo img{
+
+
+    margin-right: 10px;
+
+}
+
+@font-face{
+
+    font-family: 'modern-goth';
+    src: url(pack/modern-goth.ttf) format(truetype);
+
+}
+
+.rodape-nome{
+
+    width: 200px;
+    height: 100px;
+    border: solid 1px white;
+
+}
+
+.rodape-nome h7{
+
+    font-family: modern-goth;
+    font-size: 5em;
+    font-weight: normal;
+    font-style: normal;
+    color:white;
+    margin: 3vh;
+
+}
+
+.rodape-descricao{
+
+    flex: 1;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+.rodape-copp{
+
+    font-size: 15px;
+    margin: 10px;
+
+}
+
+.rodape-outros{
+
+    margin-top: 15px;
+
+}
+
+.rodape-outros a{
+
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.rodape-outros a:visited{
+
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+
 }
 
 
 
-/*                                              EXPERIENCIAS                                                         */
+.rodape-socialmedia{
+
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.rodape-socialmedia ul{
+
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+}
+
+.rodape-socialmedia li{
+
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.rodape-socialmedia li a{
+
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.rodape-socialmedia li a:visited{
+
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.span00{
+
+    font-size: 18px;
+
+
+}
+
+/*                                              LOJA                                                         */
 
 .exp-corpo {
 
@@ -189,22 +300,36 @@ body {
 
 /*                                              PERFIL                                                         */
 
+.perfil-wallpaper{
+
+    background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWc1dGxkZGc2Nms3cHcwajRobGZ3NHhuNGoxZWR1NXl0OTJ5ZG44NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3dhmyq6EKw2x7eFt4X/giphy.gif);
+    background-size:contain;
+    background-position: center;
+    
+    width: 100%;
+    height: 100%;
+    padding: 10vh 0vh 10vh 0vh;
+
+}
+
 .perfil-corpo {
 
     box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
 
     display: table;
     margin: auto;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    /*margin-top: 10vh;
+    margin-bottom: 10vh;*/
 
     width: 125vh;
     height: 200vh;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.678);
 
 }
 
 .perfil-conteudo {
+
+    padding: 2em;
 
     display: table-cell;
 
@@ -214,43 +339,80 @@ body {
 
     display: table-cell;
     float: left;
-    margin: 8vh;
+    margin: 2em;
     padding: 3vh;
-
-    background-color: blue;
-
+    
+    background-image: url(image/frame04.gif);
+    background-size: cover;
+    
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
+    
     width: 36vh;
     height: 36vh;
-
+    
 }
 
 .perfil-foto {
-
+    
     display: table-cell;
-
-
+    
+    background-image: url(image/foto-perfil.jpg);
+    background-size:cover;
     background-color: black;
     width: 30vh;
     height: 30vh;
-
+    
 }
 
-.perfil-nome {
-
-    padding: 20vh;
-    display: table-cell;
-
-}
-
-
-
-.perfil-bio {
-
-    background-color: darkred;
-    margin: auto;
-    padding: 10vh;
-    width: 110vh;
+.perfil-status {
+    
+    color: white;
     display: table;
+    width: 60%;
+    height: 45vh; 
+    
+}
+
+.perfil-nome{
+
+
+    width: 100%;
+    height: 20%;
+
+    /*display: table-cell;
+    float: none;*/
+
+    font-family: helvetica;
+    text-align: center;
+    font-size: 40px;
+
+
+}
+
+.perfil-bio{
+
+    margin-top: 5%;
+    padding: 1vh;
+
+    width: 100%;
+    height: 75%;
+
+}
+
+h2{
+
+    text-align:left;
+
+}
+
+.perfil-out {
+
+    background-color: black;
+
+    display: table;
+    padding: 10vh;
+    margin: 2em auto 2em auto;
+    width: 110vh;
 
     font-family: sans-serif;
     font-size: 20px;
@@ -258,36 +420,49 @@ body {
     color: white;
 }
 
-.esquerda {
+.perfil-containers{
 
-    background-color: crimson;
+    display: table;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.perfil-containers-00 {
+
+    background-color: #0B0B28;
 
     display: table-cell;
     float: left;
-
-    margin-left: 3vh;
-    margin-right: 3vh;
-    margin-top: 50px;
-    margin-bottom: 50px;
 
     width: 70vh;
     height: 120vh;
 
 }
 
-.direita {
+.perfil-containers-01 {
 
-    background-color: dodgerblue;
+    background-color: black;
 
     display: table-cell;
     float: right;
 
-    margin-right: 3vh;
-    margin-top: 50px;
-    margin-bottom: 50px;
 
     width: 40vh;
     height: 80vh;
+
+}
+
+.perfil-containers-02{
+
+    background-color:#1e212e;
+    display: table-cell;
+    float:right;
+
+    margin-top: 2em;
+
+    width: 40vh;
+    height: 36vh;
 
 }
 
@@ -300,20 +475,18 @@ body {
 
 
     display: table;
+    margin: 2em auto 2em auto;
     width: 110vh;
     padding-left: 4vh;
     padding-right: 4vh;
-    background-color: blue;
-    margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
+    background-color: black;
 
 }
 
 .perfil-amigos div {
 
 
-    background-color: darkblue;
+    background-color: #171a24;
 
     display: table-cell;
     float: left;
@@ -371,29 +544,41 @@ body {
 
 }
 
+.between{
+
+    background-color:coral;
+    width: 75%;
+    height: 100vh;
+    margin: 10vh auto 10vh auto;
+
+
+}
+
 .corpo-apresent {
 
-    background-color: purple;
+    background-color: #0B0B28;
     display: table;
 
     width: 100%;
     height: 125vh;
+    padding: 4em;
 
 }
 
 .apresent {
+
 
     background-color: black;
     border-radius: 5vh;
 
     display: table-cell;
     float: right;
-    margin: 140px 100px 0px 0px;
+
     /*  cima  /  direita  /  esquerda  /  baixo  */
     padding: 4em;
 
     width: 60%;
-    height: 75%;
+    height: 100%;
 
     font-family: sans-serif;
     text-align: justify;
@@ -404,14 +589,13 @@ body {
 
 .tipos {
 
-    background-color: chocolate;
-
+    background-color: white;
+    justify-content:space-between;
     display: flex;
-    padding: 0px 200px;
-    justify-content: space-between;
-    /**/
+    margin: 5vh auto 5vh auto;
+    /*padding: 0px 200px;*/
 
-    width: 100%;
+    width: 75%;
     height: 22em;
     align-items: center;
 
@@ -421,9 +605,10 @@ body {
 
     background-color: crimson;
 
-    display: flex;
+    display: block;
+    margin: 20px;
 
-    border-radius: 100%;
+    border-radius: 50%;
     width: 250px;
     height: 250px;
 
@@ -432,16 +617,18 @@ body {
 h4 {
     font-family: sans-serif;
     font-size: 25px;
+    color: white;
 
     margin: auto;
-    margin-top: 34vh;
+    margin-top: 10em;
 }
 
 .planos {
 
-    background-color: greenyellow;
+    background-color: #73BC89;
+    margin: 10vh auto 10vh auto;
 
-    width: 100%;
+    width: 75%;
     height: 100vh;
 
 }
@@ -449,8 +636,10 @@ h4 {
 .placeholder {
 
     display: flex;
-    background-color: crimson;
-    width: 100%;
+    background-color: rgb(99, 82, 82);
+    margin: 10vh auto 10vh auto;
+    margin-bottom: 10vh;
+    width: 75%;
     height: 75vh;
 
 }
@@ -460,18 +649,26 @@ h4 {
     display: flex;
     float: left;
     margin: auto;
-    background-color: aqua;
     
+
     border-radius: 20px;
     width: 30%;
-    height: 90%;
+    height: 80%;
 
 
 }
 
 .placeholder1{
 
+    background-color: red;
 
+}
+
+.placeholder01:hover{
+
+    background-color:purple;
+    width: 40px;
+    height: 80px;
 
 }
 
